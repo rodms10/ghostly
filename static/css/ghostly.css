@@ -511,6 +511,10 @@ a.btn {
   padding-right: 15px;
 }
 
+.taglist a {
+  text-decoration: none;
+}
+
 
 /* ==========================================================================
    Single Post - When you click on an individual post

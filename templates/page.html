@@ -5,7 +5,7 @@
 <header id="article-head">
   <div class="vertical">
     <div class="inner">
-      <a id="blog-logo" href="">
+      <a id="blog-logo" href="{{ SITEURL }}">
         <img alt="Blog Logo" src="{{ SITEURL }}/{{ AVATAR_IMG }}">
       </a>
       <h2 class="blog-title">
@@ -22,11 +22,6 @@
 {% block content %}
 <section id="content" class="post">
   <h1 class="post-title">{{ page.title }}</h1>
-  {% if PDF_PROCESSOR %}
-    <a href="{{ SITEURL }}/pdf/{{ page.slug }}.pdf">
-            get the pdf
-    </a>
-  {% endif %}
   {{ page.content }}
 </section>
 {% endblock %}
