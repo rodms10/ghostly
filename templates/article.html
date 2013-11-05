@@ -2,6 +2,7 @@
 {% block title %}{{ article.title }}{% endblock %}
 
 {% block ogmeta %}
+  <meta name="description" content="{{ article.summary|striptags }}">
   <meta property="og:title" content="{{ article.title }}" />
   <meta property="og:type" content="blog.post" />
   <meta property="og:url" content="{{ SITEURL }}/{{ article.url }}" />
@@ -47,7 +48,7 @@
     </section>
     <section class="post-footer share">
       <h4>Share this post:</h4>
-      <a class="icon-twitter" href="http://twitter.com/share?text={{ article.title | urlencode }}%20via%20@{{TWITTER_USERNAME}}%20{{ SITEURL }}/{{ article.url }}"
+      <a class="icon-twitter" href="http://twitter.com/share?text={{ article.title|urlencode }}%20via%20@{{TWITTER_USERNAME}}"
          onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
         <span class="hidden">Twitter</span>
       </a>
