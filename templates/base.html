@@ -100,6 +100,11 @@
           <a href="{{ GITHUB_URL }}" title="Fork" target="_blank">
             <i class="icon-github icon-2x"></i>
           </a>
+          {% if LINKEDIN_URL %}
+            <a href="{{ LINKEDIN_URL }}" title="Network" target="_blank">
+              <i class="icon-linkedin icon-2x"></i>
+            </a>
+          {% endif %}
           {% if tag %}
             <a href="{{ SITEURL }}/{{ TAG_FEED_ATOM|format(tag) }}" rel="alternate" title="Subscribe" target="_blank">
               <i class="icon-rss icon-2x"></i>
