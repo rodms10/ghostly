@@ -105,6 +105,11 @@
               <i class="icon-linkedin icon-2x"></i>
             </a>
           {% endif %}
+          {% if GOOGLEPLUS_URL %}
+            <a href="{{ GOOGLEPLUS_URL }}" title="Circle" target="_blank">
+              <i class="icon-google-plus icon-2x"></i>
+            </a>
+          {% endif %}
           {% if tag %}
             <a href="{{ SITEURL }}/{{ TAG_FEED_ATOM|format(tag) }}" rel="alternate" title="Subscribe" target="_blank">
               <i class="icon-rss icon-2x"></i>
